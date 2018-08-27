@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #008cff;
+}
+
+.login-body {
+    background-image: url(../images/1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, .85);
+    color: #fff;
+}
+
+#login {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#login > .row {
+    width: 600px;
+}
+
+#login input {
+    color: #fff;
+}
+
+footer.page-footer {
+    background-color: #008cff;
+}
