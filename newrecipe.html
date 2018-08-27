@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>New Recipe</title>
+        <link rel="stylesheet" href="ugoly/style.css" type="text/css"/>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Taprom' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
+<!-- Latest compiled JavaScript -->
+
+</head>
+    <body>
+		<header id="nav-container">
+            <div class="container">
+			<div class="row">
+			<div class="col-sm-8"><h1>More Recipes</h1></div>
+			<div class="col-sm-4">
+			<nav>
+					<div class="dropdown">
+						  <button class="btn btn-drop dropdown-toggle" type="button" data-toggle="dropdown">Profile
+						  <span class="caret"></span></button>
+						  <ul class="dropdown-menu">
+							<li><a href="newrecipe.html">New Recipe</a></li>
+							<hr>
+							<li><a href="#" id="logout">Logout</a></li>
+						  </ul>
+						</div>
+					</nav>
+			</div>
+			</div>
+				
+			</div>
+            
+        </header>
+		<section>
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>New Recipe</h1>
+                    <form >
+                        <p>
+                            <b>Title</b>
+                            <input type="text" value="" name="title" id="title" class="form-control" placeholder="Title of the recipe">
+                        </p>
+                        <p><b>Category</b>
+                            <select name="categories" id="categories" class="form-control">
+                                <option value="">--Select Category--</option>
+                                <option value="soup">Soup</option>
+                                <option value="stew">Stew</option>
+                            </select>
+                        </p>
+                        <p>
+                            <b>Description</b>
+                            <textarea class="form-control" rows="5" name="description" id="description"></textarea>
+                        </p>
+                        <p>
+                            <b>Ingredients</b>
+                            <textarea class="form-control" name="ingredient" id="ingredient"></textarea>
+                        </p>
+                        <p>
+                        <p><b>Image File</b></p>
+                        <input type="file" name="recipeimage" id="recipeimage"/>
+                        </p>
+						<p><input type="button" value="Save Recipe" class="btn btn-primary"></p>
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <br><br>
+                    <h3>What you need to know about recipes</h3>
+                    
+                    <p>This is a directive post to guide you in write a good recipe</p>
+                    <h4>Good and attractive title</h4>
+                    <p>The title of your recipe can attract a lot of people to your post </p>
+                    <h4>Write a good description</h4>
+                    <p>You should try as much possible to make your description</p>
+                    <ul>
+                        <li>simple</li>
+                        <li>short</li>
+                        <li>straight to the point</li>
+                        <li>make sure you point at .....</li>
+                    </ul>
+                    <h4>Using Image</h4>
+                    <p>Do select a good image</p>
+                    <img src="2.jpg" alt="sample image"/><br><br>
+                </div>
+            </div>
+        </div>
+		</section>
+        <footer>
+		<div class="cast-color"></div>
+            <div class="container">Copyright © 2018. All Right Reserved</div>
+			
+        </footer>
+        
+    </body>
+</html>
