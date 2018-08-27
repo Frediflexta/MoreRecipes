@@ -1,7 +1,7 @@
 body{
     background-image: url('https://files.slack.com/files-pri/T0MTJV092-FCF2K3USC/1.jpeg');
     background-blend-mode: multiply;
-    background-color: rgba(0, 0,0, 0.75)
+    background-color: rgba(0, 0,0, 0.75);
         }
 .form{
     width: 50%;
@@ -15,8 +15,8 @@ body{
     margin-top: 10%;
 }
 /* navbar */
-.navbar-brand {
- color: white;
+.navbar-brand, .nav-link  {
+ color: white !important;
 }
 
 /* footer */
