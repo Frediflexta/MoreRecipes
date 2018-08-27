@@ -7,6 +7,10 @@ nav {
     background-color: #008cff;
 }
 
+nav .brand-logo {
+    margin-left: 50px;
+}
+
 .login-body {
     background-image: url(../images/1.jpeg);
     background-size: cover;
@@ -27,6 +31,15 @@ nav {
 
 #login input {
     color: #fff;
+}
+
+#recipes {
+    padding: 50px;
+}
+
+.recipe .card.s3 {
+    width: 23%;
+    margin-right: 2%;
 }
 
 footer.page-footer {
