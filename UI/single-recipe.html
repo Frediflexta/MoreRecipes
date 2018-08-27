@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
     <title>single page</title>
 </head>
 <body>
@@ -24,17 +25,15 @@
             background-color: #008cff;
             position: relative;
             padding-bottom: 5px;
-            
             }
             .nav-title > a{
             text-decoration: none;
             color: #efefef;
             }
-            
             .nav > .nav-header {
             display: inline;
             }
-            #search-bar{  
+            #search-bar{
             border-radius: 5px;
             margin-left: 100px;
             width: 200px;
@@ -43,41 +42,35 @@
             padding-right: 5px;
             }
             .Ask-question{
-            float:right  
+            float:right
             }
             .nav-header{
             padding-left: 17px;
             }
-            
             .nav > .nav-header > .nav-title {
             display: inline-block;
             font-size: 22px;
             color: #fff;
             padding: 10px 10px 10px 10px;
             }
-            
             .nav > .nav-btn {
             display: none;
             }
-            
             .nav > .nav-links {
             display: inline;
             float: right;
             font-size: 18px;
             padding-right: 20px;
             }
-            
             .nav > .nav-links > a {
             display: inline-block;
             padding: 13px 10px 13px 10px;
             text-decoration: none;
             color: #efefef;
             }
-            
             .nav > .nav-links > a:hover {
             color: white;
             }
-            
             .nav > #nav-check {
             display: none;
             }
@@ -91,16 +84,22 @@
             /* footer */
             footer{
                 width:100%;
-                height:100px;
+                height:200px;
                 background-color: #008cff;
                 margin-top: 10%;
+                padding: 5%;
+            }
+            footer ul li{
+                list-style: none;
+                text-decoration: none;
+                color: white;
             }
         </style>
         <!-- Navbar -->
         <div class="nav">
                 <div class="nav-header">
                     <div class="nav-title">
-                        <a href="./index.html">Recipe</a>
+                        <a href="./index.html">More Recipe</a>
                     </div>
                 </div>
                 <div class="nav-btn">
@@ -113,21 +112,25 @@
                 <input type="checkbox" id="nav-check">
                 <div class="nav-links">
                     <a href="./user-profile.html" target="">Profile</a>
-                    <a href="./index.html" >Home</a>
                 </div>
             </div>
             <!-- card -->
         <div class="card mb-3">
-                <img class="card-img-top" src="https://files.slack.com/files-pri/T0MTJV092-FCF2K3USC/1.jpeg" alt="Card image cap">
+                <img class="card-img-top" id="receipeImage" src="https://files.slack.com/files-pri/T0MTJV092-FCF2K3USC/1.jpeg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title" id = "card-title">Card title</h5>
+                    <p class="card-text" id="card-description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted"><span id="views"></span><span id="upvotes"></span><span id="downvotes"></span></small></p>
                 </div>
                 </div>
                     <!-- footer -->
             <footer>
-        
+                <ul class="col-md-6">
+                   <li><h1>More Recipe</h1></li>
+                   <li>food recipe website</li>
+                </ul>
+                    
+                </ul>
             </footer>
-
+            <script src="../Client/js/getSpecific.js"></script>
 </body>
