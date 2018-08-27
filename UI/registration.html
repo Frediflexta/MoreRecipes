@@ -107,7 +107,7 @@
 <div class="nav">
     <div class="nav-header">
         <div class="nav-title">
-          <a href="./index.html">Recipe</a>
+          <a href="./index.html">More Recipe</a>
         </div>
     </div>
     <div class="nav-btn">
@@ -120,22 +120,23 @@
     <input type="checkbox" id="nav-check">
     <div class="nav-links">
         <a href="./user-profile.html" target="">Profile</a>
-        <a href="./index.html" >Home</a>
+        
     </div>
 </div>
+<div id ="displayNotification"></div>
     <!-- form -->
     <form class="needs-validation form" novalidate>
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+            <input type="text" class="form-control" id="firstName" placeholder="First name"  required>
             <div class="valid-feedback">
               Looks good!
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationCustom02">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+            <input type="text" class="form-control firstName" id="lastName" placeholder="Last name"  required>
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -146,7 +147,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
               </div>
-              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+              <input type="text" class="form-control userName" id="userName" placeholder="Username" aria-describedby="inputGroupPrepend" required>
               <div class="invalid-feedback">
                 Please choose a username.
               </div>
@@ -156,14 +157,14 @@
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="validationCustom03">Email</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+            <input type="text" class="form-control" id="email" placeholder="City" required>
             <div class="invalid-feedback">
               Please provide a valid Email.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="validationCustom04">Password</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="password" required>
+            <input type="password" class="form-control password" id="password" placeholder="password" required>
             <div class="invalid-feedback">
               Please provide a valid password.
             </div>
@@ -180,11 +181,14 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Sign Up</button>
+        <button class="btn btn-primary signup"  id = "signup" >Sign Up</button>
     </form>
     <!-- footer -->
     <footer>
 
     </footer>
+    <script src="../js/signup.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/index.js"></script>
 </body>
     <!-- footer -->
