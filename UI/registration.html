@@ -9,120 +9,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-
-    body{
-        background-image: url('https://files.slack.com/files-pri/T0MTJV092-FCF2K3USC/1.jpeg');
-        background-blend-mode: multiply;
-        background-color: rgba(0, 0,0, 0.75)
-            }
-    .form{
-        width: 50%;
-        margin : 0 auto;
-        margin-top: 10%;
-        color:white;
-    }
-     /* NavBar */
-  .nav {
-    height: 50px;
-    width: 100%;
-    background-color: #008cff;
-    position: relative;
-    padding-bottom: 5px;
-    
-  }
-  .nav-title > a{
-    text-decoration: none;
-    color: #efefef;
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
-  #search-bar{  
-    border-radius: 5px;
-    margin-left: 100px;
-    width: 200px;
-    height:50% ;
-    border: solid 1px #4d4d4d;
-    padding-right: 5px;
-  }
-  .Ask-question{
-    float:right  
-  }
-  .nav-header{
-    padding-left: 17px;
-  }
-  
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-    padding-right: 20px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #efefef;
-  }
-  
-  .nav > .nav-links > a:hover {
-    color: white;
-  }
-  
-  .nav > #nav-check {
-    display: none;
-  }
-  #user-nav{
-   padding:5px;
-   color:white
-  }
-  .fa-user-circle{
-    padding:5px
-  }
-  /* footer */
-  footer{
-      width:100%;
-      height:100px;
-      background-color: #008cff;
-      margin-top: 10%;
-  }
-</style>
 <body>
-<!-- Navbar -->
-<div class="nav">
-    <div class="nav-header">
-        <div class="nav-title">
-          <a href="./index.html">Recipe</a>
-        </div>
-    </div>
-    <div class="nav-btn">
-        <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    </div>
-    <input type="checkbox" id="nav-check">
-    <div class="nav-links">
-        <a href="./user-profile.html" target="">Profile</a>
-        <a href="./index.html" >Home</a>
-    </div>
-</div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary text-white" id="navbar">
+      <a class="navbar-brand" href="#">More Recipe</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown pull-right">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              profile
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- form -->
     <form class="needs-validation form" novalidate>
         <div class="form-row">
