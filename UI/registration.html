@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Registration</title>
+</head>
+<style>
+
+    body{
+        background-image: url('https://files.slack.com/files-pri/T0MTJV092-FCF2K3USC/1.jpeg');
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0,0, 0.75)
+            }
+    .form{
+        width: 50%;
+        margin : 0 auto;
+        margin-top: 10%;
+        color:white;
+    }
+     /* NavBar */
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #008cff;
+    position: relative;
+    padding-bottom: 5px;
+    
+  }
+  .nav-title > a{
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  #search-bar{  
+    border-radius: 5px;
+    margin-left: 100px;
+    width: 200px;
+    height:50% ;
+    border: solid 1px #4d4d4d;
+    padding-right: 5px;
+  }
+  .Ask-question{
+    float:right  
+  }
+  .nav-header{
+    padding-left: 17px;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding-right: 20px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    color: white;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  #user-nav{
+   padding:5px;
+   color:white
+  }
+  .fa-user-circle{
+    padding:5px
+  }
+  /* footer */
+  footer{
+      width:100%;
+      height:100px;
+      background-color: #008cff;
+      margin-top: 10%;
+  }
+</style>
+<body>
+<!-- Navbar -->
+<div class="nav">
+    <div class="nav-header">
+        <div class="nav-title">
+          <a href="./index.html">Recipe</a>
+        </div>
+    </div>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+        <a href="./user-profile.html" target="">Profile</a>
+        <a href="./index.html" >Home</a>
+    </div>
+</div>
+    <!-- form -->
+    <form class="needs-validation form" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustomUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03">Email</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+            <div class="invalid-feedback">
+              Please provide a valid Email.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom04">Password</label>
+            <input type="text" class="form-control" id="validationCustom04" placeholder="password" required>
+            <div class="invalid-feedback">
+              Please provide a valid password.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+    </form>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+</body>
+    <!-- footer -->
